@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="text-align:center">
+<button onclick="changeImageON()">Light ON</button>
+<button onclick="changeImageOFF()">Light OFF</button>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+</div>
+
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+}
+
+function changeImageON() {
+    var image = document.getElementById('myImage');
+        image.src = "pic_bulbon.gif";
+}
+
+function changeImageOFF() {
+    var image = document.getElementById('myImage');
+        image.src = "pic_bulboff.gif";
+}
+</script>
+
+</body>
+</html>
