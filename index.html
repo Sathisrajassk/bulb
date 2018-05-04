@@ -10,7 +10,7 @@
 <br/>
 <br/>
 <br/>
-
+<h4 id='linkid'></h4>
 <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
 </div>
 
@@ -26,6 +26,11 @@ function changeImage() {
 }
 
 function changeImageON() {
+
+		var location = window.location.href;
+		
+		document.getElementById('linkid').innerHTML = location;
+	
     var image = document.getElementById('myImage');
         image.src = "pic_bulbon.gif";
 }
